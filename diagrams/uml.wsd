@@ -1,0 +1,44 @@
+@startuml
+class RSJSONViewer {
+    - jsonData: Data
+    + init(json: String)
+    + body: View
+}
+
+interface JSONElement {
+    + render(): AnyView
+    + renderCell(key: String): AnyView
+}
+
+class JSONObjectView {
+    - properties: [(String, JSONElement)]
+}
+
+class JSONArrayView {
+    - elements: [JSONElement]
+}
+
+class JSONStringView {
+    - value: String
+}
+
+class JSONNumberView {
+    - value: Double
+}
+
+class JSONNullView {
+    
+}
+
+class JSONElementFactory {
+    + create(from: Any): JSONElement
+}
+
+RSJSONViewer --> JSONElementFactory : "uses"
+RSJSONViewer --> JSONElement : "parses"
+JSONElement <|-- JSONObjectView
+JSONElement <|-- JSONArrayView
+JSONElement <|-- JSONStringView
+JSONElement <|-- JSONNumberView
+JSONElement <|-- JSONNullView
+@enduml
