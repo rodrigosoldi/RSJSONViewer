@@ -79,6 +79,13 @@ The RSJSONViewer is composed of the following components:
 
 ![UML](diagrams/uml.svg)
 
+## Screenshot
+
+<video width="400" controls>
+  <source src="screenshots/screenshot.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Contributing
 
 Contributions are welcome! Feel free to open issues, suggest improvements, or submit pull requests.
