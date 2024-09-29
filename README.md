@@ -81,7 +81,8 @@ The RSJSONViewer is composed of the following components:
 
 ## Screenshot
 
-![Screenshot](screenshots/screenshot.gif)
+<!-- ![Screenshot](screenshots/screenshot.gif) -->
+<img src="screenshots/screenshot.gif" width="250" />
 
 ## Contributing
 
