@@ -1,5 +1,5 @@
 @startuml
-class RSJSONViewer {
+struct RSJSONViewer {
     - jsonData: Data
     + init(json: String)
     + body: View
@@ -10,27 +10,27 @@ interface JSONElement {
     + renderCell(key: String): AnyView
 }
 
-class JSONObjectView {
+struct JSONObjectView {
     - properties: [(String, JSONElement)]
 }
 
-class JSONArrayView {
+struct JSONArrayView {
     - elements: [JSONElement]
 }
 
-class JSONStringView {
+struct JSONStringView {
     - value: String
 }
 
-class JSONNumberView {
+struct JSONNumberView {
     - value: Double
 }
 
-class JSONNullView {
+struct JSONNullView {
     
 }
 
-class JSONElementFactory {
+struct JSONElementFactory {
     + create(from: Any): JSONElement
 }
 

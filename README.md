@@ -77,7 +77,7 @@ The RSJSONViewer is composed of the following components:
 
 ## UML
 
-![UML](diagrams/uml.png)
+![UML](diagrams/uml.svg)
 
 ## Contributing
 
