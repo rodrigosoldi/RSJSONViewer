@@ -81,10 +81,7 @@ The RSJSONViewer is composed of the following components:
 
 ## Screenshot
 
-<video width="400" controls>
-  <source src="screenshots/screenshot.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Screenshot](screenshots/screenshot.gif)
 
 ## Contributing
 
