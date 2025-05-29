@@ -20,7 +20,11 @@ struct JSONObjectView: @preconcurrency JSONElement {
                     value.renderCell(key: key)
                 }
             }
+            #if os(macOS)
+            .listStyle(.sidebar)
+            #else
             .listStyle(InsetGroupedListStyle())
+            #endif
         )
     }
     
