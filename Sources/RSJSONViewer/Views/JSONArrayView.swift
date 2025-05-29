@@ -20,7 +20,11 @@ struct JSONArrayView: @preconcurrency JSONElement {
                     value.renderCell(key: "[\(index)]")
                 }
             }
+            #if os(macOS)
+            .listStyle(.sidebar)
+            #else
             .listStyle(InsetGroupedListStyle())
+            #endif
         )
     }
         
