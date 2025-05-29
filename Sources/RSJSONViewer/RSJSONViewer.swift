@@ -76,5 +76,6 @@ public struct RSJSONViewer: View {
       }
     }
     """
+    
     RSJSONViewer(json: json)
 }

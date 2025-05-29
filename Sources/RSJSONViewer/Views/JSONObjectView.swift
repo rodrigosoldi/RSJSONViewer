@@ -21,7 +21,7 @@ struct JSONObjectView: @preconcurrency JSONElement {
                 }
             }
             #if os(macOS)
-            .listStyle(.sidebar)
+            .listStyle(.automatic)
             #else
             .listStyle(InsetGroupedListStyle())
             #endif
